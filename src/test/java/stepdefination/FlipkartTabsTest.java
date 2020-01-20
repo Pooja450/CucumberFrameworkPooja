@@ -22,13 +22,46 @@ public class FlipkartTabsTest {
 	@Then("I verify following components")
 	public void i_verify_following_components(io.cucumber.datatable.DataTable dataTable) {
 	    System.out.println("components available");
-	   /* List<String> allcomponents = dataTable.asList();
+	    List<String> allcomponents = dataTable.asList();
 		for(String e: allcomponents) {
-			System.out.println("Checking component "+e);
-			*/
-	   Assert.assertTrue(FlipkartPageObject.ElementsVisibility());
+	if(e.equalsIgnoreCase("Electronics"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else if(e.equalsIgnoreCase("TVs & Appliances"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else if(e.equalsIgnoreCase("Men"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else if(e.equalsIgnoreCase("Women"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else if(e.equalsIgnoreCase("Baby & Kids"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else if(e.equalsIgnoreCase("Sports,Books & More"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else if(e.equalsIgnoreCase("Home & Furniture"))
+	{
+		driver.findElement(By.xpath("//span[@class='_1QZ6fC _3Lgyp8']")).isDisplayed();
+	}
+	else
+	{
+		driver.findElement(By.xpath("//span[@class='_25Wjx4']")).isDisplayed();
+	}
+	}
+			
+	   
 		  // Assert.assertTrue(FlipkartPageObject.LoginButton());
 	    // Assert.assertTrue(FlipkartPageObject.CartButton());
 	    // Assert.assertTrue(FlipkartPageObject.ElectronicsButton());
-	}
 }
+	}
+

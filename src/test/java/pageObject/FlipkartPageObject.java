@@ -8,16 +8,17 @@ import org.openqa.selenium.WebElement;
 
 public class FlipkartPageObject {
 
-	static WebDriver driver;
+	/* static WebDriver driver;
 	
 	public static boolean ElementsVisibility()
 	{
 		 List<WebElement> tabselement = driver.findElements(By.xpath("//ul[@class='_114Zhd']/li"));
-		  for(WebElement e :tabselement)
-		  {
-			  e.isDisplayed();
-		  }
-		  return true;
+		 System.out.println("components available");
+		    
+				  
+		
+		  
+		  
 	}
 	/* public static boolean LoginButton()
 	{
